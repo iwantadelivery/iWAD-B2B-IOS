@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Antenna-Bold.otf">
+            <string>Antenna-Bold</string>
+            <string>Antenna-Bold</string>
+        </mutableArray>
+        <mutableArray key="Antenna-Regular.otf">
+            <string>Antenna-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IWadAlertViewController">
+            <connections>
+                <outlet property="btnCancel" destination="kZA-Sl-l5c" id="VXY-F3-cu2"/>
+                <outlet property="btnOK" destination="AEi-79-Dqu" id="Y4X-gg-ZY6"/>
+                <outlet property="lblMessage" destination="ORx-q2-V7j" id="2Pc-nF-Byy"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewContainer" destination="YGm-2i-lye" id="MaK-33-5tw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YGm-2i-lye">
+                    <rect key="frame" x="129" y="208" width="342" height="184"/>
+                    <subviews>
+                        <button opaque="NO" tag="200" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AEi-79-Dqu" customClass="iWadButton">
+                            <rect key="frame" x="181" y="125" width="110" height="40"/>
+                            <fontDescription key="fontDescription" name="Antenna-Bold" family="Antenna" pointSize="13"/>
+                            <state key="normal" title="OKAY">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="didPressOk:" destination="-1" eventType="touchUpInside" id="uEp-ST-rus"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Are you sure you want to proceed with this payment?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ORx-q2-V7j">
+                            <rect key="frame" x="21" y="8" width="301" height="97"/>
+                            <fontDescription key="fontDescription" name="Antenna-Regular" family="Antenna" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZA-Sl-l5c">
+                            <rect key="frame" x="51" y="125" width="110" height="40"/>
+                            <fontDescription key="fontDescription" name="Antenna-Bold" family="Antenna" pointSize="13"/>
+                            <state key="normal" title="CANCEL">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="didPressCancel:" destination="-1" eventType="touchUpInside" id="eyF-8z-TGM"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.25098039220000001" green="0.26274509800000001" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="342" id="Ueh-Ym-vbz"/>
+                        <constraint firstAttribute="height" constant="184" id="VF7-Cw-WGa"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.64641702586206895" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="YGm-2i-lye" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="eD6-Js-LJv"/>
+                <constraint firstItem="YGm-2i-lye" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="sAT-an-Hqw"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <point key="canvasLocation" x="586" y="456"/>
+        </view>
+    </objects>
+</document>

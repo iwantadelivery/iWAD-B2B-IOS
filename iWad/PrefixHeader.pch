@@ -1,0 +1,43 @@
+//
+//  PrefixHeader.pch
+//  iWad
+//
+//  Created by Saman Kumara on 12/14/15.
+//  Copyright © 2015 Saman Kumara. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
+
+#import "BaseViewController.h"
+#import "SideViewController.h"
+#import "Constants.h"
+#import "BaseTableViewController.h"
+#import "SWNetworking.h"
+#import "SyncManager.h"
+#import "DatePickerViewController.h"
+#import "IWadTextField.h"
+#import "iWadButton.h"
+#import "IWadLabel.h"
+#import "Delivery.h"
+#import "BaseUtilClass.h"
+#import "NSString+Category.h"
+#import "LocationUtil.h"
+#import "AppDelegate.h"
+#import "CoreDataManager.h"
+#import "NSDate+Category.h"
+#import "NSString+Category.h"
+#import "IWadAlertViewController.h"
+#import "IWadVehicle.h"
+
+#import <CoreData/CoreData.h>
+
+#define UIColorFromRGB(rgbValue) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0];

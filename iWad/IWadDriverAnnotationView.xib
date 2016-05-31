@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Antenna-Bold.otf">
+            <string>Antenna-Bold</string>
+        </mutableArray>
+        <mutableArray key="Antenna-Regular.otf">
+            <string>Antenna-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="IWadDriverAnnotationView">
+            <rect key="frame" x="0.0" y="0.0" width="249" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="driverBubble" translatesAutoresizingMaskIntoConstraints="NO" id="15m-qP-iEe">
+                    <rect key="frame" x="0.0" y="0.0" width="249" height="50"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Driver" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jjk-wo-zkZ">
+                    <rect key="frame" x="14" y="11" width="35" height="21"/>
+                    <fontDescription key="fontDescription" name="Antenna-Bold" family="Antenna" pointSize="10"/>
+                    <color key="textColor" red="0.54117647059999996" green="0.55294117649999996" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Driver name here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0Y-Ta-LLD">
+                    <rect key="frame" x="87" y="11" width="154" height="21"/>
+                    <fontDescription key="fontDescription" name="Antenna-Regular" family="Antenna" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="userProfDefaultPic" translatesAutoresizingMaskIntoConstraints="NO" id="IOP-ji-zTk">
+                    <rect key="frame" x="51" y="6" width="30" height="30"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imgViewDriverPic" destination="IOP-ji-zTk" id="mDc-wb-U00"/>
+                <outlet property="lblDriverName" destination="W0Y-Ta-LLD" id="fuS-WC-V4a"/>
+            </connections>
+            <point key="canvasLocation" x="457.5" y="756"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="driverBubble" width="249" height="48"/>
+        <image name="userProfDefaultPic" width="85" height="85"/>
+    </resources>
+</document>
